@@ -227,6 +227,7 @@ export async function getServerSideProps(context) {
 
   const isConnected = await client.isConnected() // Returns true or false
 
+  console.log({props: {isConnected}})
   return {
     props: { isConnected },
   }
